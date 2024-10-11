@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "8xZSvOEcYiDAn+tRkatY3ypJyCTERD+e+bseQNmq4uo=",
+  "Source": "BackEndLabs",
+  "BasePath": "_content/BackEndLabs",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BackEndLabs\\wwwroot",
+      "Source": "BackEndLabs",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\",
+      "BasePath": "_content/BackEndLabs",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\index.html",
+      "SourceId": "BackEndLabs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\",
+      "BasePath": "_content/BackEndLabs",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\index.js",
+      "SourceId": "BackEndLabs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\",
+      "BasePath": "_content/BackEndLabs",
+      "RelativePath": "js/index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\index.js"
+    }
+  ]
+}

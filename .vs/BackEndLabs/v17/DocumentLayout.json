@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\BackEndLabs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86D13B5F-3006-4E3E-ACFD-9B8C2A775788}|BackEndLabs\\BackEndLabs.csproj|c:\\users\\user\\source\\repos\\backendlabs\\backendlabs\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{86D13B5F-3006-4E3E-ACFD-9B8C2A775788}|BackEndLabs\\BackEndLabs.csproj|solutionrelative:backendlabs\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86D13B5F-3006-4E3E-ACFD-9B8C2A775788}|BackEndLabs\\BackEndLabs.csproj|c:\\users\\user\\source\\repos\\backendlabs\\backendlabs\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86D13B5F-3006-4E3E-ACFD-9B8C2A775788}|BackEndLabs\\BackEndLabs.csproj|solutionrelative:backendlabs\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86D13B5F-3006-4E3E-ACFD-9B8C2A775788}|BackEndLabs\\BackEndLabs.csproj|c:\\users\\user\\source\\repos\\backendlabs\\backendlabs\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86D13B5F-3006-4E3E-ACFD-9B8C2A775788}|BackEndLabs\\BackEndLabs.csproj|solutionrelative:backendlabs\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 482,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InfoController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\Controllers\\InfoController.cs",
+              "RelativeDocumentMoniker": "BackEndLabs\\Controllers\\InfoController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\Controllers\\InfoController.cs",
+              "RelativeToolTip": "BackEndLabs\\Controllers\\InfoController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:52:55.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "BackEndLabs\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\index.html",
+              "RelativeToolTip": "BackEndLabs\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-11T08:43:20Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\index.js",
+              "RelativeDocumentMoniker": "BackEndLabs\\wwwroot\\js\\index.js",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\index.js",
+              "RelativeToolTip": "BackEndLabs\\wwwroot\\js\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-11T08:21:29.561Z",
+              "EditorCaption": ""
             }
           ]
         },
