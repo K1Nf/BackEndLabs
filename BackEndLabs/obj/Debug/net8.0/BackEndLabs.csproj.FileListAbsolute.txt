@@ -103,3 +103,15 @@ C:\Users\User\source\repos\BackEndLabs\BackEndLabs\obj\Debug\net8.0\refint\BackE
 C:\Users\User\source\repos\BackEndLabs\BackEndLabs\obj\Debug\net8.0\BackEndLabs.pdb
 C:\Users\User\source\repos\BackEndLabs\BackEndLabs\obj\Debug\net8.0\BackEndLabs.genruntimeconfig.cache
 C:\Users\User\source\repos\BackEndLabs\BackEndLabs\obj\Debug\net8.0\ref\BackEndLabs.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Npgsql.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
