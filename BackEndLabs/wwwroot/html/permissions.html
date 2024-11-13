@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/userPage.css" />
+</head>
+<body>
+    <div class="center-container">
+        <header class="centered-header">
+            <div>
+                <button id="lab1">INFO</button>
+                <button id="me">ME</button>
+                <button id="users">USERS</button>
+                <button id="roles">ROLES</button>
+                <button id="permissions">PERMISSIONS</button>
+                <button id="userChanges">USERS CHANGES</button>
+                <button id="roleChanges">ROLES CHANGES</button>
+                <button id="permissionChanges">PERMISSIONS CHANGES</button>
+                <button id="logreq">LOG REQUEST</button>
+            </div>
+            <div>
+                <button id="logout">LOG OUT</button>
+            </div>
+        </header>
+        <div class="content">
+            <h1>Список разрешений</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>PermissionId</td>
+                        <td>PermissionName </td>
+                        <td>Manage</td>
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+                </tbody>
+            </table>
+            <div id="id-assignment" class="id-assignment">
+                <label>Введите Id разрешения для восстановления:</label>
+                <input type="number" id="restorePermissionId" placeholder="Введите Id">
+                <button id="restorePermission">Восстановить разрешение</button>
+            </div>
+            <button id="createPermission">Создать разрешение</button>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/permissions.js"></script>
+</body>
+</html>

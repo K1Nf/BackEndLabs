@@ -18,20 +18,9 @@ namespace BackEndLabs.Models
         public DateTime? Deleted_At { get; set; }
         public int? Deleted_By { get; set; }
 
-
-        //[NotMapped]
-        //[JsonIgnore]
-        //public int? UserId { get; set; }
-
         [JsonIgnore]
         public List<User> Users { get; set; } = [];
 
-        //[NotMapped]
-        //[JsonIgnore]
-        //public int? PermissionId { get; set; }
-        //[JsonIgnore]
         public List<Permission> Permissions {  get; private set; } = [];
-
-        //public List<Permission> GetPermissions() => Permissions;
     }
 }

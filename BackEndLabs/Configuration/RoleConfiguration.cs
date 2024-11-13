@@ -26,30 +26,32 @@ namespace BackEndLabs.Configuration
                 r.Deleted_By == null &&
                 r.Deleted_At == null);
 
-            builder.HasData(new Role()
-            {
-                Id = 1,
-                Name = "Admin",
-                Code = "0001",
-                Created_At = DateTime.UtcNow,
-                Created_By = 1,
 
-            }, new Role()
-            {
-                Id = 2,
-                Name = "User",
-                Code = "0002",
-                Created_At = DateTime.UtcNow,
-                Created_By = 1,
-            },
-            new Role()
-            {
-                Id = 3,
-                Name = "Guest",
-                Code = "0003",
-                Created_At = DateTime.UtcNow,
-                Created_By = 1,
-            });
+            
+            //builder.HasData(new Role()
+            //{
+            //    Id = 1,
+            //    Name = "Admin",
+            //    Code = "0001",
+            //    Created_At = DateTime.UtcNow,
+            //    Created_By = 1,
+
+            //}, new Role()
+            //{
+            //    Id = 2,
+            //    Name = "User",
+            //    Code = "0002",
+            //    Created_At = DateTime.UtcNow,
+            //    Created_By = 1,
+            //},
+            //new Role()
+            //{
+            //    Id = 3,
+            //    Name = "Guest",
+            //    Code = "0003",
+            //    Created_At = DateTime.UtcNow,
+            //    Created_By = 1,
+            //});
         }
     }
 }

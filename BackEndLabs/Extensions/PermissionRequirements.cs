@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace BackEndLabs.Extensions
 {
-    public class PermissionRequirements() : IAuthorizationRequirement
+    public class PermissionRequirements(Permission permission) : IAuthorizationRequirement
     {
-        //public Permission[] Permissions => permissions;
+        public Permission Permission => permission;
     }
 }

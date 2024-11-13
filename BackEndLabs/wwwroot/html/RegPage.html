@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../css/RegPage.css">
+</head>
+<body>
+    <header class="centered-header">
+        <div>
+            <button id="lab1">INFO</button>
+            <button id="me">ME</button>
+            <button id="users">USERS</button>
+            <button id="roles">ROLES</button>
+            <button id="permissions">PERMISSIONS</button>
+            <button id="userChanges">USERS CHANGES</button>
+            <button id="roleChanges">ROLES CHANGES</button>
+            <button id="permissionChanges">PERMISSIONS CHANGES</button>
+            <button id="logreq"> LOG REQUEST</button>
+        </div>
+        <div>
+            <h1 id="userName"></h1>
+            <button id="logout"> LOG OUT</button>
+        </div>
+    </header>
+    <div class="content">
+        <h2>Создайте аккаунт</h2>
+        <form>
+            <div class="registration-form">
+                <label>Логин пользователя:</label>
+                <input type="text" id="userName" name="userName" placeholder="Введите логин">
+
+                <label>Почта:</label>
+                <input type="email" id="email" name="email" placeholder="Введите почту">
+
+                <label>Дата рождения:</label>
+                <input type="date" id="birthday" name="birthday" placeholder="Введите дату рождения">
+
+                <label>Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль">
+
+                <label>Повтор пароля:</label>
+                <input type="password" id="c_Password" name="c_Password" placeholder="Повторите пароль">
+
+                <button>Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Получаем текущую дату
+        const today = new Date().toISOString().split('T')[0];
+
+        // Устанавливаем атрибут max для input
+        document.getElementById('birthday').setAttribute('max', today);
+
+    </script>
+    <script src="../js/reg.js"></script>
+</body>
+</html>

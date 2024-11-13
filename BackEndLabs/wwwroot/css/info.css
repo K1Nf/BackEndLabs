@@ -1,0 +1,225 @@
+
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding-top: 12vh; /* Отступ сверху для фиксированного header */
+}
+.container {
+    width: 90vw;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 2vh;
+    border-radius: 8px;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрируем текст в контейнере */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Увеличиваем размер заголовка */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1vh 2vw; /* Увеличиваем размер кнопки */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem; /* Увеличиваем размер текста кнопки */
+    margin-bottom: 20px; /* Отступ снизу для кнопки */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.request-row {
+    display: flex;
+    justify-content: center; /* Центрируем строки с данными */
+    padding: 1vh 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.request-row:last-child {
+    border-bottom: none; /* Убираем границу у последней строки */
+}
+
+.request-label {
+    font-weight: bold;
+}
+
+.request-value {
+    margin-left: 10px;
+    color: #555;
+}
+
+.container {
+    width: 90vw;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 2vh;
+    border-radius: 8px;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+}
+
+.request-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.request-row:last-child {
+    border-bottom: none; /* Убираем границу у последней строки */
+}
+
+.request-label {
+    font-weight: bold;
+}
+
+.request-value {
+    margin-left: 10px;
+    color: #555;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5vh 1.5vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Закрепленный header в */
+.centered-header{
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+header
+{
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+header button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 1.2vh 2vw;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.log-container {
+    width: 80vw;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.log-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.log-row:last-child {
+    border-bottom: none;
+}
+
+.log-label {
+    font-weight: bold;
+    color: #555;
+    width: 50%;
+}
+
+.log-value {
+    width: 50%;
+    color: #333;
+    text-align: right;
+}
+
+/* Добавление немного отступов и улучшение читаемости */
+.log-row .log-label, .log-row .log-value {
+    padding: 5px 10px;
+}
+
+
+header button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение кнопок */
+    margin-left: 20px; /* Отступ слева */
+}
+
+.infoserv {
+    display: flex;
+    align-items: center; /* Выравнивание кнопки и текста по центру */
+    margin: 3vh 0; /* Отступ между кнопками */
+}
+
+.info {
+    margin-left: 20px; /* Отступ между кнопкой и информацией */
+    display: inline-block; /* Чтобы информация отображалась в одной строке */
+}
+

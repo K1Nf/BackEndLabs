@@ -1,4 +1,5 @@
 ﻿using BackEndLabs.Contracts;
+using BackEndLabs.Contracts.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,9 +24,11 @@ namespace BackEndLabs.Controllers
             return Ok(userInfo);
         }
 
+
+
         [HttpGet]
         [Route("server")]
-        public IActionResult GetServerInfo([FromServices] IConfiguration configuration)
+        public IActionResult GetServerInfo()
         {
             var serverInfo = new ServerInfoDTO()
             {
@@ -36,6 +39,7 @@ namespace BackEndLabs.Controllers
             return Ok(serverInfo);
         }
 
+
         [HttpGet]
         [Route("database")]
         public IActionResult GetDataBaseInfo()
@@ -45,6 +49,7 @@ namespace BackEndLabs.Controllers
                 Name = "Postgres",
                 Version = 16
             };
+
             return Ok(db);
         }
     }

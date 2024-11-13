@@ -16,10 +16,7 @@ namespace BackEndLabs.Middlewares
         public async Task Invoke(HttpContext context)
         {
             // Получаем токен из запроса
-            string token = context.Request
-                .Headers["Authorization"]
-                .ToString()
-                .Replace("Bearer ", "");
+            string? token = context.Request.Cookies["NeToken"] ?? context.Request.Headers.Authorization;
 
 
             if (!string.IsNullOrWhiteSpace(token))
@@ -32,12 +29,11 @@ namespace BackEndLabs.Middlewares
                 if (!IsDataBaseContainsToken(_context, token))
                 {
                     context.Response.StatusCode = 401;
-                    await context.Response.WriteAsync("Invalid token sorry");
+                    context.Response.Cookies.Delete("NeToken");
                     return;
                 }
             }
-
-            await _next(context);
+            await _next(context);   
         }
 
         private bool IsDataBaseContainsToken(ApplicationDbContext _context, string token)

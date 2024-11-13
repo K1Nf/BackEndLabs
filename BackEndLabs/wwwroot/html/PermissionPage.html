@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Страница управление разрешением</title>
+    <link rel="stylesheet" href="../css/userPage.css">
+</head>
+<body>
+    <div class="center-container">
+        <header class="centered-header">
+            <div>
+                <button id="lab1">INFO</button>
+                <button id="me">ME</button>
+                <button id="users">USERS</button>
+                <button id="roles">ROLES</button>
+                <button id="permissions">PERMISSIONS</button>
+                <button id="userChanges">USERS CHANGES</button>
+                <button id="roleChanges">ROLES CHANGES</button>
+                <button id="permissionChanges">PERMISSIONS CHANGES</button>
+                <button id="logreq">LOG REQUEST</button>
+            </div>
+            <div>
+                <button id="logout">LOG OUT</button>
+            </div>
+        </header>
+        <div class="content">
+            <div>
+                <h3>Id:</h3>
+                <p id="permissionId"></p>
+            </div>
+            <hr>
+            <div>
+                <h3>Название разрешения:</h3>
+                <ul id="permissionName"></ul>
+            </div>
+            <hr>
+            <div>
+                <h3>Описание разрешения:</h3>
+                <ul id="permissionDescription"></ul>
+            </div>
+            <hr>
+            <div>
+                <h3>Код разрешения:</h3>
+                <ul id="permissionCode"></ul>
+            </div>
+            <hr>
+            <div>
+                <h3>Управление:</h3>
+                <button id="updatePermission">Обновить разрешение</button>
+                <button id="softDeleteRole">Мягкое удаление разрешения</button>
+                <button id="hardDeleteRole">Жесткое удаление разрешения</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/permissionPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding-top: 12vh; /* Отступ сверху для фиксированного header */
+}
+
+/* Закрепленный header */
+header {
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+header button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 1.2vh 2vw;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Основной контент */
+.content {
+    background-color: #ffffff;
+    padding: 3vh 3vw;
+    width: 90vw;
+    /*max-width: 60vw;*/
+    border-radius: 0.8vh;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vh;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.2vw;
+    margin-bottom: 1vh;
+}
+
+p, li {
+    font-size: 1.3vw;
+    color: #333;
+}
+
+hr {
+    border: 0.1vh solid #ddd;
+    margin: 2vh 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1.2vh 2vw;
+    margin-top: 1vh;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для управления */
+.id-assignment {
+    margin-top: 2vh;
+}
+
+.id-assignment label {
+    display: block;
+    font-size: 1.1vw;
+    color: #333;
+    margin-bottom: 1vh;
+}
+
+.id-assignment input[type="number"] {
+    padding: 1vh 1vw;
+    border: 0.1vh solid #ddd;
+    border-radius: 0.5vh;
+    width: 100%;
+    max-width: 30vw;
+    margin-bottom: 1vh;
+}
+
+.id-assignment button {
+    padding: 1vh 2vw;
+}
+
+/* Стили для форм управления */
+#addRoleDiv, #softDeleteDiv, #hardDeleteRoleDiv, #restoreRoleDiv {
+    display: none; /* Изначально скрыты */
+    margin-top: 1vh;
+}
+
+#addRoleDiv.active, #softDeleteDiv.active, #hardDeleteRoleDiv.active, #restoreRoleDiv.active {
+    display: block; /* Отображаются при активации */
+}
+
+input[type="number"] {
+    padding: 1vh;
+    border: 0.1vh solid #ddd;
+    border-radius: 0.5vh;
+    width: 100%;
+    max-width: 30vw;
+    margin-right: 1vw;
+}
+
+
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2vh 2vw;
+    }
+
+    header div {
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .content {
+        width: 95vw;
+        padding: 2vh 2vw;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1.4vw;
+    }
+
+    p, input[type="number"] {
+        font-size: 1vw;
+    }
+
+    button {
+        font-size: 0.9vw;
+        padding: 1vh 2vw;
+    }
+}

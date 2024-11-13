@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Вход в аккаунт</title>
+    <link rel="stylesheet" href="../css/LoginPage.css">
+</head>
+<body>
+    <header class="centered-header">
+        <div>
+            <button id="lab1">INFO</button>
+            <button id="me">ME</button>
+            <button id="users">USERS</button>
+            <button id="roles">ROLES</button>
+            <button id="permissions">PERMISSIONS</button>
+            <button id="userChanges">USERS CHANGES</button>
+            <button id="roleChanges">ROLES CHANGES</button>
+            <button id="permissionChanges">PERMISSIONS CHANGES</button>
+            <button id="logreq">LOG REQUEST</button>
+        </div>
+        <div>
+            <h1 id="userName"></h1>
+            <button id="logout">LOG OUT</button>
+        </div>
+    </header>
+    <div class="content">
+        <h2>Войдите свой аккаунт</h2>
+        <form>
+            <div class="registration-form">
+                <label for="usernameInput">Введите логин или почту:</label>
+                <input type="text" id="userName" name="userName" placeholder="Введите логин или почту">
+
+                <label for="passwordInput">Введите пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль">
+
+                <button id="loginButton" type="submit">Войти</button>
+                <button id="loginRegButton" type="button"> Нет аккаунта? Давайте зарегистрируемся! </button>
+
+            </div>
+        </form>
+    </div>
+    <script src="../js/authorize.js"></script>
+</body>
+</html>

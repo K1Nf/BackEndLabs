@@ -133,9 +133,27 @@ namespace BackEndLabs.Configuration
                 PermissionId = 18,
                 Created_At = DateTime.UtcNow,
                 Created_By = 1
-            }, 
-            
-            
+            }, new RolesAndPermissions()
+            {
+                RoleId = 1,
+                PermissionId = 19,
+                Created_At = DateTime.UtcNow,
+                Created_By = 1
+            }, new RolesAndPermissions()
+            {
+                RoleId = 1,
+                PermissionId = 20,
+                Created_At = DateTime.UtcNow,
+                Created_By = 1
+            }, new RolesAndPermissions()
+            {
+                RoleId = 1,
+                PermissionId = 21,
+                Created_At = DateTime.UtcNow,
+                Created_By = 1
+            },
+
+
             new RolesAndPermissions()
             {
                 RoleId = 2,

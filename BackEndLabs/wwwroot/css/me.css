@@ -1,0 +1,261 @@
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding-top: 12vh; /* Отступ сверху для фиксированного header */
+}
+
+/* Закрепленный header */
+header {
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+    header div {
+        display: flex;
+        align-items: center;
+        gap: 1.5vw;
+    }
+
+    header button {
+        background-color: white;
+        color: #007bff;
+        border: none;
+        padding: 1.2vh 2vw;
+        font-weight: bold;
+        border-radius: 0.5vh;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        header button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+/* Основной контент */
+.content {
+    display: flex; /* Flex-контейнер для расположения элементов в ряд */
+    align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+    background-color: #ffffff;
+    padding: 3vh 3vw;
+    border-radius: 0.8vh;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vh;
+}
+
+.user-info {
+    flex: 1; /* Элемент занимает оставшееся пространство */
+    margin-right: 2vw; /* Отступ справа для отделения от изображения */
+}
+
+.profile-picture {
+    width: 300px; /* Ширина контейнера для фотографии */
+    height: 300px; /* Высота контейнера для фотографии */
+    border-radius: 50%; /* Круглая форма */
+    overflow: hidden; /* Скрытие переполнения */
+    display: flex; /* Для центрирования изображения */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    background-color: #f0f2f5; /* Цвет фона контейнера */
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятия */
+}
+
+    .profile-picture img {
+        width: 100%; /* Ширина изображения */
+        height: 100%; /* Высота изображения */
+        object-fit: cover; /* Сохранение пропорций и заполнение контейнера */
+        border-radius: 50%; /* Круглая форма для изображения */
+    }
+
+
+
+
+
+
+/* Стили для управления */
+.control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    margin-top: 2vh;
+    padding: 2vh; /* Добавляем отступы для лучшего восприятия */
+    background-color: #ffffff; /* Фон для раздела управления */
+    border-radius: 0.8vh; /* Закругление углов */
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятия */
+}
+
+.role-form {
+    /*display: none;*/
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+
+    .role-form.active {
+        display: flex; /* Отображаем форму, когда добавлен класс активного состояния */
+    }
+
+    .role-form label {
+        margin-bottom: 0.5vh;
+    }
+
+    .role-form input {
+        height: 3vh;
+        margin-bottom: 1vh;
+        padding: 1vh; /* Добавляем отступы внутри инпутов */
+        border: 0.1vh solid #ddd; /* Граница */
+        border-radius: 0.5vh; /* Закругление углов */
+        width: 100%; /* Ширина инпута */
+        max-width: 30vw; /* Максимальная ширина */
+    }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+    margin-top: 1vh;
+}
+
+    .button-container button {
+        width: 20vw;
+    }
+
+.content {
+    display: flex; /* Flex-контейнер для расположения элементов в ряд */
+    align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+    background-color: #ffffff;
+    padding: 3vh 3vw;
+    width: 90vw;
+    border-radius: 0.8vh;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vh;
+}
+
+.img_contr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    margin-bottom: 1vh;
+}
+
+/* Контейнер для кнопок */
+.button-container-horizontal {
+    display: flex;
+    gap: 1vh; /* Отступы между кнопками */
+}
+
+
+
+button {
+    background-color: #007bff; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 1.2vh 2vw; /* Отступы */
+    border-radius: 0.5vh; /* Закругление углов */
+    cursor: pointer; /* Курсор указателя при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    font-weight: bold; /* Жирный текст */
+    width: 10vw;
+}
+
+    button:hover {
+        background-color: #0056b3; /* Цвет кнопки при наведении */
+    }
+
+
+
+/* Стили для формы управления */
+#addRoleDiv, #softDeleteDiv, #hardDeleteRoleDiv, #restoreRoleDiv {
+    display: none; /* Изначально скрыты */
+    margin-top: 1vh;
+}
+
+    #addRoleDiv.active, #softDeleteDiv.active, #hardDeleteRoleDiv.active, #restoreRoleDiv.active {
+        display: block; /* Отображаются при активации */
+    }
+
+p, li {
+    font-size: 1.3vw;
+    color: #333;
+}
+
+hr {
+    border: 0.1vh solid #ddd;
+    margin: 2vh 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2vh 2vw;
+    }
+
+        header div {
+            flex-direction: column;
+            gap: 1vh;
+        }
+
+    .content {
+        flex-direction: column; /* Изменяем направление на колонку для мобильных устройств */
+        padding: 2vh 2vw;
+    }
+
+    .user-info {
+        margin-right: 0; /* Убираем отступ для мобильных устройств */
+        margin-bottom: 2vh; /* Добавляем отступ снизу */
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1.4vw;
+    }
+
+    p, input[type="number"] {
+        font-size: 1vw;
+    }
+
+    button {
+        font-size: 0.9vw;
+        padding: 1vh 2vw;
+    }
+}

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Информация о запросе (логе)</title>
+    <link rel="stylesheet" href="../css/LogReq.css" />
+</head>
+<body>
+    <div class="center-container">
+        <header class="centered-header">
+            <div>
+                <button id="lab1">INFO</button>
+                <button id="me">ME</button>
+                <button id="users">USERS</button>
+                <button id="roles">ROLES</button>
+                <button id="permissions">PERMISSIONS</button>
+                <button id="userChanges">USERS CHANGES</button>
+                <button id="roleChanges">ROLES CHANGES</button>
+                <button id="permissionChanges">PERMISSIONS CHANGES</button>
+                <button id="logreq"> LOG REQUEST</button>
+            </div>
+            <div>
+                <h1 id="userName"></h1>
+                <button id="logout">LOG OUT</button>
+            </div>
+        </header>
+        <div class="center-container">
+            
+            <div class="content">
+                <div>
+                    <h3>Request id:</h3>
+                    <p id="id"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>ControllerName:</h3>
+                    <p id="controllerName"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>ActionName:</h3>
+                    <p id="actionName"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>IpAddress:</h3>
+                    <p id="ipAddress"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>Method:</h3>
+                    <p id="method"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>Path:</h3>
+                    <p id="path"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>RequestBody:</h3>
+                    <p id="requestBody"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>RequestHeaders:</h3>
+                    <p id="requestHeaders"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>ResponseBody:</h3>
+                    <p id="responseBody"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>ResponseHeaders:</h3>
+                    <p id="responseHeaders"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>StatusCode:</h3>
+                    <p id="statusCode"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>UserAgent:</h3>
+                    <p id="userAgent"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>UserId:</h3>
+                    <p id="userId"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/requestlogPage.js"></script>
+</body>
+</html>

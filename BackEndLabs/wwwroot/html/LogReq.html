@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Список логов</title>
+    <link rel="stylesheet" href="LogReq.css" />
+</head>
+<body>
+    <div class="center-container">
+        <header class="centered-header">
+            <div>
+                <button id="lab1">INFO</button>
+                <button id="me">ME</button>
+                <button id="users">USERS</button>
+                <button id="roles">ROLES</button>
+                <button id="permissions">PERMISSIONS</button>
+                <button id="userChanges">USERS CHANGES</button>
+                <button id="roleChanges">ROLES CHANGES</button>
+                <button id="permissionChanges">PERMISSIONS CHANGES</button>
+                <button id="logreq"> LOG REQUEST</button>
+            </div>
+            <div>
+                <h1 id="userName"></h1>
+                <button id="logout"> LOG OUT</button>
+            </div>
+        </header>
+        <div class="content">
+            <h2>Список логов</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>RequestId</th>
+                        <th>Path</th>
+                        <th>ControllerName</th>
+                        <th>ActionName</th>
+                        <th>StatusCode</th>
+                        <th>Created At</th>
+                        <th>Manage</th>
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+                    <tr>
+                        <td>12345</td>
+                        <td>/example/path</td>
+                        <td>ExampleController</td>
+                        <td>ExampleAction</td>
+                        <td>200</td>
+                        <td>2024-10-29 12:00:00</td>
+                        <td><button>Manage</button></td>
+                    </tr>
+                    <tr>
+                        <td>12345</td>
+                        <td>/example/path</td>
+                        <td>ExampleController</td>
+                        <td>ExampleAction</td>
+                        <td>200</td>
+                        <td>2024-10-29 12:00:00</td>
+                        <td><button>Manage</button></td>
+                    </tr>
+                    <!-- Здесь добавлю дополнительные строки по мере необходимости -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

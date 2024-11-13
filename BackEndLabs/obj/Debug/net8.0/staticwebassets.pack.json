@@ -1,12 +1,204 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\css\\LogReq.css",
+      "PackagePath": "staticwebassets\\css\\LogReq.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\css\\LoginPage.css",
+      "PackagePath": "staticwebassets\\css\\LoginPage.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\css\\RegPage.css",
+      "PackagePath": "staticwebassets\\css\\RegPage.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\css\\RolesPage.css",
+      "PackagePath": "staticwebassets\\css\\RolesPage.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\css\\info.css",
+      "PackagePath": "staticwebassets\\css\\info.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\css\\me.css",
+      "PackagePath": "staticwebassets\\css\\me.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\css\\userPage.css",
+      "PackagePath": "staticwebassets\\css\\userPage.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\LogReq.html",
+      "PackagePath": "staticwebassets\\html\\LogReq.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\LoginPage.html",
+      "PackagePath": "staticwebassets\\html\\LoginPage.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\PermissionPage.html",
+      "PackagePath": "staticwebassets\\html\\PermissionPage.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\RegPage.html",
+      "PackagePath": "staticwebassets\\html\\RegPage.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\accessDenied.html",
+      "PackagePath": "staticwebassets\\html\\accessDenied.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\admin.html",
+      "PackagePath": "staticwebassets\\html\\admin.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\createpermission.html",
+      "PackagePath": "staticwebassets\\html\\createpermission.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\createrole.html",
+      "PackagePath": "staticwebassets\\html\\createrole.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\info.html",
+      "PackagePath": "staticwebassets\\html\\info.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\me.html",
+      "PackagePath": "staticwebassets\\html\\me.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\permissionChangesLogs.html",
+      "PackagePath": "staticwebassets\\html\\permissionChangesLogs.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\permissions.html",
+      "PackagePath": "staticwebassets\\html\\permissions.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\requestlog.html",
+      "PackagePath": "staticwebassets\\html\\requestlog.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\requestslogs.html",
+      "PackagePath": "staticwebassets\\html\\requestslogs.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\roleChangesLogs.html",
+      "PackagePath": "staticwebassets\\html\\roleChangesLogs.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\rolePage.html",
+      "PackagePath": "staticwebassets\\html\\rolePage.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\roles.html",
+      "PackagePath": "staticwebassets\\html\\roles.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\updatePermission.html",
+      "PackagePath": "staticwebassets\\html\\updatePermission.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\updateRole.html",
+      "PackagePath": "staticwebassets\\html\\updateRole.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\userChangesLogs.html",
+      "PackagePath": "staticwebassets\\html\\userChangesLogs.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\userPage.html",
+      "PackagePath": "staticwebassets\\html\\userPage.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\html\\users.html",
+      "PackagePath": "staticwebassets\\html\\users.html"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\admin.js",
+      "PackagePath": "staticwebassets\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\authorize.js",
+      "PackagePath": "staticwebassets\\js\\authorize.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\createPermission.js",
+      "PackagePath": "staticwebassets\\js\\createPermission.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\createRole.js",
+      "PackagePath": "staticwebassets\\js\\createRole.js"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\permissionChanges.js",
+      "PackagePath": "staticwebassets\\js\\permissionChanges.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\permissionPage.js",
+      "PackagePath": "staticwebassets\\js\\permissionPage.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\permissions.js",
+      "PackagePath": "staticwebassets\\js\\permissions.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\reg.js",
+      "PackagePath": "staticwebassets\\js\\reg.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\requestlogPage.js",
+      "PackagePath": "staticwebassets\\js\\requestlogPage.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\requestslogs.js",
+      "PackagePath": "staticwebassets\\js\\requestslogs.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\roleChanges.js",
+      "PackagePath": "staticwebassets\\js\\roleChanges.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\rolePage.js",
+      "PackagePath": "staticwebassets\\js\\rolePage.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\roles.js",
+      "PackagePath": "staticwebassets\\js\\roles.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\updatePermission.js",
+      "PackagePath": "staticwebassets\\js\\updatePermission.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\updateRole.js",
+      "PackagePath": "staticwebassets\\js\\updateRole.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\userChanges.js",
+      "PackagePath": "staticwebassets\\js\\userChanges.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\userPage.js",
+      "PackagePath": "staticwebassets\\js\\userPage.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\BackEndLabs\\BackEndLabs\\wwwroot\\js\\users.js",
+      "PackagePath": "staticwebassets\\js\\users.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BackEndLabs.Microsoft.AspNetCore.StaticWebAssets.props",

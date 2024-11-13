@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Список логов</title>
+    <link rel="stylesheet" href="../css/LogReq.css" />
+</head>
+<body>
+    <div class="center-container">
+        <div class="center-container">
+            <header class="centered-header">
+                <div>
+                    <button id="lab1">INFO</button>
+                    <button id="me">ME</button>
+                    <button id="users">USERS</button>
+                    <button id="roles">ROLES</button>
+                    <button id="permissions">PERMISSIONS</button>
+                    <button id="userChanges">CHANGES LOGS</button>
+                    <button id="logreq"> LOG REQUEST</button>
+                </div>
+                <div>
+                    <h1 id="userName"></h1>
+                    <button id="logout">LOG OUT</button>
+                </div>
+            </header>
+            <div class="content">
+
+                <!-- Параметры для сортировки -->
+                <div class="div_sort">
+                    <h2>Сортировка</h2>
+                    <div>
+                        <label>Параметр 1 для сортировки:</label>
+                        <input type="text" id="firstSortInput" list="sortOptions" placeholder="Выберите параметр" />
+                        <select id="sortAsc1">
+                            <option value="Asc"> По возрастанию - asc </option>
+                            <option value="Desc"> По убыванию - desc </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Параметр 2 для сортировки:</label>
+                        <input type="text" id="secondSortInput" list="sortOptions" placeholder="Выберите параметр" />
+                        <select id="sortAsc2">
+                            <option value="Asc"> По возрастанию - asc </option>
+                            <option value="Desc"> По убыванию - desc </option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Параметры для фильтрации -->
+                <div class="div_filt">
+                    <h2>Фильтрация</h2>
+                    <div>
+                        <label for="sortInput">Введите значение UserAgent:</label>
+                        <input type="text" id="filterUserAgentInput" placeholder="Path" />
+                    </div>
+
+                    <div>
+                        <label for="sortInput">Введите значение ControllerName:</label>
+                        <input type="text" id="filterControllerInput" placeholder="ControllerName" />
+                    </div>
+
+                    <div>
+                        <label for="sortInput">Введите значение IpAddress:</label>
+                        <input type="text" id="filterIpAddressInput" placeholder="ActionName" />
+                    </div>
+                    <div>
+                        <label for="sortInput">Введите значение StatusCode:</label>
+                        <input type="text" id="filterStatusCodeInput" placeholder="StatusCode" />
+                    </div>
+                    <div>
+                        <label for="sortInput">Введите значение UserId:</label>
+                        <input type="text" id="filterUserIdInput" placeholder="Created At" />
+                    </div>
+                </div>
+
+                <!-- Параметры для пагинации -->
+                <div class="div_pag">
+                    <h2>Пагинация</h2>
+                    <div>
+                        <label for="recordCount"> Количество записей:</label>
+                        <input type="number" id="recordCount" placeholder="Введите число записей" />
+                        <label for="pageNumber"> Номер страницы:</label>
+                        <input type="number" id="pageNumber" placeholder="Введите номер страницы" />
+                    </div>
+                </div>
+
+                <button id="getResult">Посмотреть результат</button>
+
+                <div class="table">
+                    <h2>Список логов</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>RequestId</th>
+                                <th>Path</th>
+                                <th>ControllerName</th>
+                                <th>ActionName</th>
+                                <th>StatusCode</th>
+                                <th>Created At</th>
+                                <th>Manage</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- datalist для значений -->
+        <datalist id="sortOptions">
+            <option value="UserAgent"></option>
+            <option value="ControllerName"></option>
+            <option value="ActionName"></option>
+            <option value="StatusCode"></option>
+            <option value="UserId"></option>
+        </datalist>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/requestslogs.js"></script>
+    </div>
+</body>
+</html>

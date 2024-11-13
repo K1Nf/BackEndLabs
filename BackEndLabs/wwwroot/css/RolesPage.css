@@ -1,0 +1,163 @@
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding-top: 12vh; /* Отступ сверху для фиксированного header */
+}
+
+/* Закрепленный header в */
+.centered-header{
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+header
+{
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+header button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 1.2vh 2vw;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Закрепленный header в */
+.centered-header{
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+header
+{
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+header button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 1.2vh 2vw;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.role-form {
+    background-color: #ffffff;
+    padding: 3vh 3vw;
+    border-radius: 0.8vh;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    margin-top: 2vh;
+    text-align: left;
+}
+
+.role-form label {
+    font-size: 1.1em;
+    margin-bottom: 0.5vh;
+    display: block;
+}
+
+.role-form input, .role-form textarea, .role-form select {
+    width: 100%;
+    max-width: 35vw;
+    padding: 1.2vh;
+    border: 0.1vh solid #ddd;
+    border-radius: 0.5vh;
+    margin-bottom: 2vh;
+    font-size: 1em;
+}
+
+.role-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1.5vh 2vw;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.role-form button:hover {
+    background-color: #0056b3;
+}

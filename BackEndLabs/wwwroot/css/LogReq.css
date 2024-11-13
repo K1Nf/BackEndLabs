@@ -1,0 +1,245 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Вертикальное выравнивание по верхней части */
+    min-height: 100vh;
+    color: #333;
+}
+
+.center-container {
+    width: 90vw;
+    max-width: 60vw;
+    margin-top: 12vh; /* Отступ для закрепленного header */
+}
+
+/* Закрепленный header */
+.centered-header {
+    background-color: #007bff;
+    color: white;
+    width: 100vw;
+    padding: 3vh 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+header button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 1.2vh 2vw;
+    font-weight: bold;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    header button:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+
+/* Основной контент */
+.content {
+    display: flex;
+    flex-direction: column; /* Расположение элементов по вертикали */
+    align-items: left; /* Центрирование элементов по горизонтали */
+    gap: 2vh; /* Отступ между элементами */
+    background-color: #ffffff;
+    padding: 3vh 3vw;
+    border-radius: 0.8vh;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.1);
+    margin-top: 0vh; /* Отступ сверху от header */
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 7vh;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1.5vh;
+}
+
+/* Поля для сортировки и фильтрации */
+.filter-sort,
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование элементов */
+    gap: 1.5vw; /* Отступы между элементами */
+    margin-bottom: 2vh; /* Отступ снизу */
+}
+
+    .filter-sort label,
+    .pagination-controls label {
+        margin-right: 0.5vw; /* Отступ справа от метки */
+    }
+
+/* Стили для селекта вида сортировки */
+#sortType {
+    padding: 0.8vh 1vw;
+    border: 1px solid #ddd;
+    border-radius: 0.5vh;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    margin-left: 0.5vw; /* Отступ слева для небольшого расстояния от поля ввода */
+    transition: background-color 0.3s;
+}
+
+    #sortType:hover {
+        background-color: #f0f2f5; /* Цвет фона при наведении */
+    }
+
+.div_sort {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    gap: 10px; /* Отступы между элементами */
+    padding: 3vh;
+}
+
+.div_filt {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    gap: 10px; /* Отступы между элементами */
+    padding: 3vh;
+    width: 100%; /* Убедитесь, что блок занимает всю доступную ширину */
+    margin-left: 15vw;
+}
+
+    .div_filt h2 {
+        margin-left: 6.8vw;
+    }
+
+
+.div_pag {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    gap: 10px; /* Отступы между элементами */
+    padding: 3vh;
+}
+
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем пробелы между ячейками */
+    margin-top: 2vh;
+    border-radius: 0.8vh; /* Округление углов таблицы */
+    overflow: hidden; /* Скрытие границ из-за округления */
+    table-layout: auto; /* Автоматическое изменение ширины колонок в зависимости от содержимого */
+    word-wrap: break-word; /* Позволяет перенести слова */
+    word-break: break-word; /* Переносит длинные строки */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Граница таблицы */
+}
+
+th, td {
+    padding: 1vh; /* Отступы в ячейках */
+    text-align: left; /* Выравнивание текста */
+    white-space: pre-wrap; /* Перенос текста на следующую строку */
+    width: 15vw;
+}
+
+tr {
+    background-color: #56bbf5;
+}
+
+/* Заголовки таблицы */
+th {
+    background-color: #007bff; /* Цвет фона для заголовков таблицы */
+    color: white; /* Цвет текста заголовка */
+}
+
+tbody tr:hover {
+    background-color: #e7f3f5; /* Цвет при наведении на строку */
+}
+
+/* Стили для полей ввода */
+input[type="text"],
+input[type="number"] {
+    padding: 0.8vh 1vw;
+    border: 1px solid #ddd; /* Граница полей ввода */
+    border-radius: 0.5vh; /* Округление углов полей ввода */
+    font-size: 1rem; /* Размер шрифта */
+}
+
+/* Стили для кнопок в полях ввода */
+#sortAsc, #sortDesc, #getResult {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8vh 1.5vw;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    #sortAsc:hover, #sortDesc:hover {
+        justify-content: center;
+        background-color: #0056b3;
+    }
+
+
+.pagination-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8vh 1.5vw;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+    .pagination-controls button:hover {
+        justify-content: center;
+        background-color: #0056b3;
+    }
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .centered-header {
+        flex-direction: column;
+        align-items: center; /* Центрируем элементы */
+    }
+
+        .centered-header button {
+            margin-bottom: 1vh; /* Отступ между кнопками по вертикали */
+        }
+
+    .content {
+        padding: 2vh 2vw;
+    }
+
+    .filter-sort,
+    .pagination-controls {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: flex-start;
+        /* Выравнивание по левому краю */
+    }
+}

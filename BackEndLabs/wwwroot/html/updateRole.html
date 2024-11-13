@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание Ролей</title>
+    <link rel="stylesheet" href="../../css/RolesPage.css" />
+
+</head>
+<body>
+    <div class="center-container">
+        <header class="centered-header">
+            <div>
+                <button id="lab1">INFO</button>
+                <button id="me">ME</button>
+                <button id="users">USERS</button>
+                <button id="roles">ROLES</button>
+                <button id="permissions">PERMISSIONS</button>
+                <button id="userChanges">USERS CHANGES</button>
+                <button id="roleChanges">ROLES CHANGES</button>
+                <button id="permissionChanges">PERMISSIONS CHANGES</button>
+                <button id="logreq">LOG REQUEST</button>
+            </div>
+            <div>
+                <h1 id="userName"></h1>
+                <button id="logout">LOG OUT</button>
+            </div>
+        </header>
+
+        <div class="content">
+            <h1 id="updateHeader1" style="text-align: center"></h1>
+            <br />
+            <h2 style="text-align: center">Введите новые значения только в те поля, которые нужно обновить</h2>
+
+            <form class="role-form">
+                <label>Имя:</label>
+                <input type="text" id="name" name="name">
+
+                <label>Описание:</label>
+                <textarea id="description" name="description" rows="2"></textarea>
+
+                <!--<label for="roleCode">Код:</label>
+        <input type="text" id="code" name="code" required>-->
+
+                <button type="submit">Обновить роль</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../../js/updateRole.js"></script>
+</body>
+</html>

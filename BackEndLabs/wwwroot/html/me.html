@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Страница управление разрешением</title>
+    <link rel="stylesheet" href="../css/me.css">
+</head>
+<body>
+    <div class="center-container">
+        <header class="centered-header">
+            <div>
+                <button id="lab1">INFO</button>
+                <button id="me">ME</button>
+                <button id="users">USERS</button>
+                <button id="roles">ROLES</button>
+                <button id="permissions">PERMISSIONS</button>
+                <button id="userChanges">CHANGES LOGS</button>
+                <button id="admin">ADMIN</button>
+                <button id="logreq">LOG REQUEST</button>
+            </div>
+            <div>
+                <button id="logout">LOG OUT</button>
+            </div>
+        </header>
+        <div class="content">
+            <div class="user-info">
+                <h3>Имя пользователя:</h3>
+                <p id="userName"></p>
+                <hr>
+                <h3>Email:</h3>
+                <ul id="userEmail"></ul>
+                <hr>
+                <h3>Дата рождения: </h3>
+                <ul id="userBirthday"></ul>
+                <hr>
+            </div>
+            <div class="img_contr">
+                <img class="profile-picture" id="userPhoto">
+                <div class="button-container-horizontal">
+                    <button id="downloadImage">Скачать изображение</button>
+                    <button id="uploadImage">Добавить изображение</button>
+                </div>
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+            </div>
+        </div>
+
+        <!-- Новый раздел для управления -->
+        <div class="control">
+            <h3>Управление:</h3>
+
+            <div class="button-container">
+                <button id="showPasswordForm">Поменять пароль</button>
+                <button id="getTokens">Посмотреть все токены</button>
+                <button id="out_all">Разлогирование всех токенов</button>
+            </div>
+            <div>
+                <form class="role-form" hidden>
+                    <label>Введите старый пароль:</label>
+                    <input placeholder="Введите старый пароль..." type="password" id="oldPassword" name="oldPassword">
+                    <br />
+                    <label>Введите новый пароль:</label>
+                    <input placeholder="Введите новый пароль..." type="password" id="newPassword" name="newPassword">
+                    <button type="submit">Обновить пароль</button>
+                </form>
+            </div>
+            <ul id="tokenList"></ul>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/me1.js"></script>
+    <!--<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const showPasswordFormButton = document.getElementById('showPasswordForm');
+            const form = document.querySelector('.role-form'); // Получаем форму
+
+            if (showPasswordFormButton && form) { // Проверяем наличие кнопки и формы
+                showPasswordFormButton.addEventListener('click', function () {
+                    const controlDiv = document.querySelector('.control');
+
+                    // Переключаем класс активного состояния
+                    form.classList.toggle('active'); // Переключаем класс active
+                    if (form.classList.contains('active')) {
+                        controlDiv.classList.add('active'); // Добавляем класс активного состояния
+                    } else {
+                        controlDiv.classList.remove('active'); // Убираем класс активного состояния
+                    }
+                });
+            } else {
+                console.error("Кнопка или форма не найдены");
+            }
+        });
+    </script>-->
+</body>
+</html>

@@ -1,3 +1,4 @@
+using BackEndLabs.Background;
 using BackEndLabs.Data;
 using BackEndLabs.Extensions;
 using BackEndLabs.JWT;
@@ -8,6 +9,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Net;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,11 +25,18 @@ builder.Services.AddScoped<JwtProvider>();
 builder.Services.AddScoped<TokenService>();
 
 
-
 builder.Services.AddScoped<IAuthorizationHandler, PermissionsHandler>();
+builder.Services.AddHttpContextAccessor();
 
 
+builder.Services.AddHostedService<BackgroundTask>();
+
+
+builder.Services.Configure<FileFormatter>(builder.Configuration.GetSection(nameof(FileFormatter)));
 builder.Services.Configure<JWTConfiguration>(builder.Configuration.GetSection(nameof(JWTConfiguration)));
+builder.Services.Configure<JobConfiguration>(builder.Configuration.GetSection(nameof(JobConfiguration)));
+
+
 
 builder.Services.AddControllers();
 
@@ -61,7 +70,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             OnMessageReceived = context =>
             {
-                context.Token = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+                string? token = context.Request.Cookies["NeToken"] ?? context.Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+
+                if (token != null)
+                {
+                    context.Token = token.Replace("Bearer ", "");
+                }
+
                 Console.Write("Current token is: ");
                 Console.WriteLine(context.Token);
                 return Task.CompletedTask;
@@ -70,10 +85,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 
-builder.Services.AddAuthorization(opts => {
-    // устанавливаем ограничение по возрасту
-    opts.AddPolicy("PermissionLimit", policy => policy.Requirements.Add(new PermissionRequirements()));
-});
+builder.Services.ConfigureAuthorization();
 
 
 var app = builder.Build();
@@ -84,28 +96,50 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
+app.UseStatusCodePages(async context => {
+
+    var request = context.HttpContext.Request;
+    var response = context.HttpContext.Response;
+
+    if (response.StatusCode == (int)HttpStatusCode.Unauthorized)
+    {
+        response.Redirect("/authorize/login");
+    }
+
+    response.ContentType = "text/plain; charset=utf-8";
+    await response.WriteAsync("Unexpected error with code: " + response.StatusCode);
+});
+
 app.UseStaticFiles();
+app.UseDefaultFiles();
 
 
 app.UseAuthentication();
+app.UseMiddleware<JwtBlacklistMiddleware>();
 
-//app.UseMiddleware<JwtBlacklistMiddleware>();
+app.UseMiddleware<LogRequestMiddleware>();
+
 
 app.UseAuthorization();
 
 
-
 app.MapControllers();
 
-app.UseDefaultFiles();
 
-app.MapGet("/", (context) =>
-{
-    context.Response.Redirect("index.html");
-    return Task.CompletedTask;
-});
-//    .RequireAuthorization(r =>
+/*app.MapGet("/AccessDenied", (context) =>
 //{
-//    r.Requirements.Add(new PermissionRequirements(new Permission[ new () { } ]));
-//});
+//    context.Response.Headers.ContentType = "text/html";
+//    context.Response.StatusCode = 403;
+//    context.Response.SendFileAsync("wwwroot/html/accessDenied.html");
+//    return Task.CompletedTask;
+});*/
+
+app.MapGet("/authorize/login", async (context) =>
+{
+    context.Response.ContentType = "text/html; charset=utf-8";
+    context.Response.StatusCode = 401;
+    await context.Response.SendFileAsync("wwwroot/html/LoginPage.html");
+});
+
+
 app.Run();

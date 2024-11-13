@@ -1,5 +1,6 @@
-﻿using BackEndLabs.Contracts;
+﻿using BackEndLabs.Contracts.Response;
 using BackEndLabs.Data;
+using BackEndLabs.Enum;
 using BackEndLabs.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,19 +14,21 @@ namespace BackEndLabs.Controllers
     {
         private readonly ApplicationDbContext _context = context;
 
+
+
         [HttpGet]
-        [Authorize(Policy = "PermissionLimit")]
+        [Authorize(Policy = nameof(PermissionsNames.get_list_user))]
         public async Task<IActionResult> GetAllUsers()
         {
             return Ok(await _context.Users
                 .Include(u => u.Roles)
-                    // roles where userandroles.deleted_by is not null // add queryfilter?
                 .ToListAsync());
         }
 
 
+
         [HttpGet("{id:int}/role")]
-        [Authorize(policy: "get")]
+        [Authorize(Policy = nameof(PermissionsNames.read_user))]
         public async Task<IActionResult> GetUserRoles(int id)
         {
             var userRoles = await _context.UsersAndRoles
@@ -35,14 +38,25 @@ namespace BackEndLabs.Controllers
 
             var roles = userRoles
                 .Select(x => x.Role)
+                .OrderBy(r => r!.Id)
                 .ToList();
 
-            return Ok(roles);
+            List<RoleDTO> rolesDTO = roles.Select(r => new RoleDTO
+            {
+                Id = r!.Id,
+                Code = r!.Code,
+                Description = r.Description,
+                Name = r.Name,
+            }).ToList();
+
+            return Ok(rolesDTO);
         }
 
 
+
         [HttpPost("{userId:int}/role/{roleId:int}")]
-        public async Task<IActionResult> AddRoleToUser(int userId, int roleId) // [frombody] roleId???
+        [Authorize(Policy = nameof(PermissionsNames.create_user))]
+        public async Task<IActionResult> AddRoleToUser(int userId, int roleId)
         {
             var userAndRole = new UsersAndRoles()
             {
@@ -61,6 +75,7 @@ namespace BackEndLabs.Controllers
 
 
         [HttpDelete("{userId:int}/role/{roleId:int}/soft")]
+        [Authorize(Policy = nameof(PermissionsNames.delete_user))]
         public async Task<IActionResult> SoftDeleteRole(int userId, int roleId)
         {
             await _context.UsersAndRoles
@@ -76,6 +91,7 @@ namespace BackEndLabs.Controllers
 
 
         [HttpDelete("{userId:int}/role/{roleId:int}")]
+        [Authorize(Policy = nameof(PermissionsNames.delete_user))]
         public async Task<IActionResult> RudeDeleteRole(int userId, int roleId)
         {
             await _context.UsersAndRoles
@@ -89,6 +105,7 @@ namespace BackEndLabs.Controllers
 
 
         [HttpPost("{userId:int}/role/{roleId:int}/restore")]
+        [Authorize(Policy = nameof(PermissionsNames.restore_user))]
         public async Task<IActionResult> RestoreDeletedRole(int userId, int roleId)
         {
             await _context.UsersAndRoles
@@ -100,6 +117,30 @@ namespace BackEndLabs.Controllers
                     );
 
             return Ok();
+        }
+
+
+
+        [HttpGet("{id:int}/story")]
+        [Authorize(Policy = nameof(PermissionsNames.get_story_user))]
+        public async Task<IActionResult> GetUserChangesStory(int id)
+        {
+            var userStory = await _context.ChangeLogs
+                .AsNoTracking()
+                .Where(c => c.EntityId == id)
+                .ToListAsync();
+
+            List<ChangeLogsDTO> changesLogsDTO = userStory
+                .Select(p => new ChangeLogsDTO
+                {
+                    EntityName = p.EntityName,
+                    NewValue = p.NewValue,
+                    OldValue = p.OldValue,
+                    Id = p.Id,
+                    EntityId = id
+                }).ToList();
+
+            return Ok(changesLogsDTO);
         }
     }
 }

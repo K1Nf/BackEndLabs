@@ -115,3 +115,14 @@ C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Newtonsoft.J
 C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Npgsql.dll
 C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\EPPlus.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\EPPlus.Interfaces.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\source\repos\BackEndLabs\BackEndLabs\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
